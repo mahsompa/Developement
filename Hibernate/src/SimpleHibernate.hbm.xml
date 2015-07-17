@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="SimpleHibernate" table="student">
+        <id name="studentId" type="int">
+            <column name="studentId" />
+            <generator class="increment" />
+        </id>
+        <property name="studentname" type="java.lang.String">
+            <column name="studentname" />
+        </property>
+        <property name="studentAge" type="int">
+            <column name="studentAge" />
+        </property>
+    </class>
+</hibernate-mapping>
